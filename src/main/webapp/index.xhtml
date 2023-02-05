@@ -11,19 +11,21 @@
   <h:form>
     <h:panelGrid columns="2">
 
-      <h:outputText value="Name: " for="nameField"/>
-      <h:inputText id="nameField" />
+      <h:outputText value="Name: " for="nameField" />
+      <h:inputText id="nameField" value="#{bean.item.name}" />
 
       <h:outputText value="Telephone: " for="telephone" />
-      <h:inputText id="telephoneField" />
+      <h:inputText id="telephoneField" value="#{bean.item.telephone}"/>
 
       <h:outputLabel value="telephone type: " for="type" />
-        <h:selectOneMenu id="type">
+      <h:selectOneMenu id="type" value="#{bean.item.telephoneType}">
         <f:selectItems value="#{bean.telephoneType}" var="telephoneType" itemLabel="#{telephoneType.description}" itemValue="#{telephoneType}"/>
       </h:selectOneMenu>
       
       <h:outputLabel />
-      <h:commandButton value="Submit" actionListener="#{bean.submit}" />
+      <div class="right">
+        <h:commandButton value="Submit" actionListener="#{bean.submit}" />
+      </div>
 
     </h:panelGrid>
   </h:form>
