@@ -2,6 +2,8 @@ h1 {
   color: red;
 }
 
-.right {
-    text-align: right;
+.form-group .submit-button {
+    background-color: green;
+    color: white;
+    float: right;
 }
