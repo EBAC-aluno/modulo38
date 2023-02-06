@@ -14,16 +14,16 @@
       <h:outputText value="Name: " for="nameField" />
       <h:inputText id="nameField" value="#{bean.item.name}" />
 
-      <h:outputText value="Telephone: " for="telephone" />
-      <h:inputText id="telephoneField" value="#{bean.item.telephone}"/>
+      <h:outputText value="Telephone number: " for="telephoneNumberField" />
+      <h:inputText id="telephoneNumberField" value="#{bean.item.telephoneNumber}"/>
 
       <h:outputLabel value="telephone type: " for="type" />
       <h:selectOneMenu id="type" value="#{bean.item.telephoneType}">
         <f:selectItems value="#{bean.telephoneType}" var="telephoneType" itemLabel="#{telephoneType.description}" itemValue="#{telephoneType}"/>
       </h:selectOneMenu>
-      
+
       <h:outputLabel />
-      <h:commandButton styleClass="submit-button" value="Submit" actionListener="#{bean.submit}" />
+      <h:commandButton style="float: right;" value="Submit" actionListener="#{bean.submit}" />
 
     </h:panelGrid>
   </h:form>

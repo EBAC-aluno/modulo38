@@ -3,7 +3,7 @@ package com.mastertheboss;
 public class Item {
 
   private String name;
-  private String telephone;
+  private String telephoneNumber;
   private TelephoneType telephoneType;
 
   public Item() {
@@ -15,11 +15,11 @@ public class Item {
   public void setName(String name) {
     this.name = name;
   }
-  public String getTelephone() {
-    return telephone;
+  public String getTelephoneNumber() {
+    return telephoneNumber;
   }
-  public void setTelephone(String telephone) {
-    this.telephone = telephone;
+  public void setTelephoneNumber(String telephoneNumber) {
+    this.telephoneNumber = telephoneNumber;
   }
   public TelephoneType getTelephoneType() {
     return telephoneType;

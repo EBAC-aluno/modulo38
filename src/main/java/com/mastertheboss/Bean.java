@@ -21,7 +21,7 @@ public class Bean implements Serializable {
   }
 
   public void submit(){
-    System.out.println(item.getName() + " " + item.getTelephone() + " " + item.getTelephoneType());
+    System.out.println(item.getName() + " " + item.getTelephoneNumber() + " " + item.getTelephoneType());
   }
 
   public TelephoneType[] getTelephoneType(){
