@@ -1,4 +1,4 @@
-package com.mastertheboss;
+package dev.pedrohflobo;
 
 public enum TelephoneType {
   LANDLINE("landline"), CELLPHONE("cellphone"), PUBLIC("public");

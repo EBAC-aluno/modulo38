@@ -2,13 +2,12 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.mastertheboss</groupId>
-    <artifactId>TodoApplication</artifactId>
+    <groupId>dev.pedrohflobo</groupId>
+    <artifactId>Telephone</artifactId>
     <version>10.0.0-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>WildFly Quickstart: helloworld</name>
-    <description>WildFly Quickstarts: Helloworld</description>
-    <url>http://wildfly.org</url>
+    <name>The project</name>
+    <description>The project</description>
 
     <licenses>
         <license>

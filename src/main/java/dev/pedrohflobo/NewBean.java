@@ -1,4 +1,4 @@
-package com.mastertheboss;
+package dev.pedrohflobo;
 
 import java.io.Serializable;
 import java.util.List;

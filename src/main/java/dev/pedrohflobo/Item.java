@@ -1,4 +1,4 @@
-package com.mastertheboss;
+package dev.pedrohflobo;
 
 public class Item {
 

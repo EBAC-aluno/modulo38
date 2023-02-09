@@ -9,22 +9,22 @@
 <h:body>
   <h1>List</h1> 
   <h:form>
-    <h:dataTable value="#{newBean.list}" var="p">  
+    <h:dataTable style="width: 500px; text-align: center;" value="#{newBean.list}" var="p">  
       <h:column>  
-        <f:facet name="header">ID</f:facet>  
+        <f:facet name="header">Name</f:facet>  
         <h:outputText value="#{p.name}"/>  
       </h:column>  
       <h:column>  
-        <f:facet name="header">Name</f:facet>  
+        <f:facet name="header">Telephone number</f:facet>  
         <h:outputText value="#{p.telephoneNumber}"/>  
       </h:column>  
       <h:column>  
-        <f:facet name="header">Price</f:facet>  
+        <f:facet name="header">Telephone Type</f:facet>  
         <h:outputText value="#{p.telephoneType.description}" />  
       </h:column>  
     </h:dataTable>  
   </h:form>
-  <button style="margin-top: 30px;" onclick="location.href='/TodoApplication/index.xhtml'" type="button">add telephone</button>
+  <button style="margin-top: 30px;" onclick="location.href='/Telephone/index.xhtml'" type="button">add telephone</button>
  
 </h:body>
 
