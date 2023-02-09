@@ -9,6 +9,12 @@ public class Item {
   public Item() {
   }
 
+  public Item(String name, String telephoneNumber, TelephoneType telephoneType){
+    this.name = name;
+    this.telephoneNumber = telephoneNumber;
+    this.telephoneType = telephoneType;
+  }
+
   public String getName() {
     return name;
   }

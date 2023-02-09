@@ -10,14 +10,14 @@ public class DataTable {
 
   }
 
-  private List<Product> productsList;  
+  private List<Item> list;  
 
-  public List<Product> getDataList() {    
-    productsList = new ArrayList<>();    
-    productsList.add(new Product(1, "Car", 1299));    
-    productsList.add(new Product(2, "Soap", 299));    
-    productsList.add(new Product(3, "Mirror", 10));    
-    return productsList;  
+  public List<Item> getDataList() {    
+    list = new ArrayList<>();    
+    list.add(new Item("Carlos", "41988776655", TelephoneType.PUBLIC));    
+    list.add(new Item("Renata", "11911111111", TelephoneType.LANDLINE));    
+    list.add(new Item("Patric", "31922222222", TelephoneType.CELLPHONE));    
+    return list;  
   }    
 
 }  

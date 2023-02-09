@@ -12,9 +12,9 @@ public class NewBean implements Serializable {
   private static final long serialVersionUID = 1L;
   
   private DataTable d = new DataTable();
-  private List<Product> list = d.getDataList();
+  private List<Item> list = d.getDataList();
   
-  public List<Product> getList(){
+  public List<Item> getList(){
     return list;
   }
 
