@@ -7,7 +7,7 @@ import javax.inject.Named;
 
 @Named
 @ViewScoped
-public class Bean implements Serializable {
+public class RegisterBean implements Serializable {
   private static final long serialVersionUID = 1L;
 
   private Item item = new Item();

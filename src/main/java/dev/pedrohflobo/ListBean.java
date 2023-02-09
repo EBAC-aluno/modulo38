@@ -8,7 +8,7 @@ import javax.inject.Named;
 
 @Named
 @ViewScoped
-public class NewBean implements Serializable {
+public class ListBean implements Serializable {
   private static final long serialVersionUID = 1L;
   
   private DataTable d = new DataTable();
