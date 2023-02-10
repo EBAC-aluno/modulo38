@@ -1,10 +1,12 @@
-package dev.pedrohflobo;
+package dev.pedrohflobo.telephone;
 
 import java.io.Serializable;
 import java.util.List;
 
 import javax.faces.view.ViewScoped;
 import javax.inject.Named;
+
+import dev.pedrohflobo.telephone.domain.Item;
 
 @Named
 @ViewScoped
