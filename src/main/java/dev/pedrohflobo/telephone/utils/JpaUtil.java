@@ -8,6 +8,10 @@ public class JpaUtil {
 
   private static EntityManagerFactory entityManagerFactory = null;
 
+  private JpaUtil() {
+
+  }
+
   public static void createEntityManagerFactory(String name) {
     if (entityManagerFactory == null) {
       entityManagerFactory = Persistence.createEntityManagerFactory(name);
@@ -29,10 +33,6 @@ public class JpaUtil {
         closeEntityManagerFactory();
       }
     });
-  }
-
-  private JpaUtil() {
-
   }
 
 }

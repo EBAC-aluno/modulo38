@@ -1,4 +1,4 @@
-package dev.pedrohflobo.telephone.dao.services.generics;
+package dev.pedrohflobo.telephone.services.generics;
 
 import java.util.List;
 

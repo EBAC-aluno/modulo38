@@ -1,4 +1,4 @@
-package dev.pedrohflobo.telephone.dao.services.generics;
+package dev.pedrohflobo.telephone.services.generics;
 
 import java.util.List;
 
@@ -18,7 +18,7 @@ public class GenericService<T, K, D extends GenericDao<T, K>> implements IGeneri
 
   @Override
   public void register(T entity) throws CommitException {
-    dao.save(entity);
+    dao.save(entity); 
   }
 
   @Override
@@ -27,18 +27,18 @@ public class GenericService<T, K, D extends GenericDao<T, K>> implements IGeneri
   }
 
   @Override
-  public void update(T entity) throws CommitException {
+  public void update(T entity) throws CommitException{
     dao.update(entity);
   }
 
   @Override
-  public void deleteById(K id) throws IdNotFoundException, CommitException {
+  public void deleteById(K id) throws IdNotFoundException, CommitException{
     dao.deleteById(id);
   }
 
   @Override
   public T findById(K id) throws IdNotFoundException {
-    return dao.findById(id);
+    return dao.findById(id);  
   }
 
 }

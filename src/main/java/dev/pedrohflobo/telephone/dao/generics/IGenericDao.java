@@ -15,5 +15,5 @@ public interface IGenericDao<T, K> {
   List<T> findAll();
 
   void deleteById(K id) throws IdNotFoundException, CommitException;
-
+  
 }

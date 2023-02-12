@@ -2,8 +2,6 @@ package dev.pedrohflobo.telephone.exception;
 
 public class CommitException extends Exception{
 
-  private static final long serialVersionUID = 1L;
-
   public CommitException() {
   }
 

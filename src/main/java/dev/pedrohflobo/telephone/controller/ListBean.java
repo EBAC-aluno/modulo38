@@ -1,4 +1,4 @@
-package dev.pedrohflobo.telephone;
+package dev.pedrohflobo.telephone.controller;
 
 import java.io.Serializable;
 import java.util.List;
@@ -6,6 +6,7 @@ import java.util.List;
 import javax.faces.view.ViewScoped;
 import javax.inject.Named;
 
+import dev.pedrohflobo.telephone.DataTable;
 import dev.pedrohflobo.telephone.domain.Item;
 
 @Named
