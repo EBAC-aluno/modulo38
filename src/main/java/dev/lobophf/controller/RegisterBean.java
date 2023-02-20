@@ -9,8 +9,6 @@ import javax.faces.context.FacesContext;
 import javax.faces.view.ViewScoped;
 import javax.inject.Named;
 
-import org.primefaces.PrimeFaces;
-
 import dev.lobophf.dao.UserDAO;
 import dev.lobophf.domain.TelephoneType;
 import dev.lobophf.domain.User;
@@ -22,7 +20,6 @@ public class RegisterBean implements Serializable {
 
   private User user;
   private UserDAO dao;
-  FacesMessage message = null;
 
   @PostConstruct
   public void init() throws Exception {
@@ -49,8 +46,8 @@ public class RegisterBean implements Serializable {
     if (optionalUser.isEmpty()) {
       dao.register(user);
     } else {
-      System.out.println("error!!!!!!!!!!!!!!!!!");
-
+      FacesContext.getCurrentInstance().addMessage(null,
+          new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error: Telephone already registered.", "Validation Error"));
     }
 
   }
