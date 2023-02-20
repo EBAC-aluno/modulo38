@@ -45,11 +45,12 @@ public class RegisterBean implements Serializable {
     Optional<User> optionalUser = dao.search(user.getTelephone());
     if (optionalUser.isEmpty()) {
       dao.register(user);
+      FacesContext.getCurrentInstance().addMessage(null,
+          new FacesMessage(FacesMessage.SEVERITY_INFO, "The telephone was recorded.", ""));
+      user = new User();
     } else {
       FacesContext.getCurrentInstance().addMessage(null,
           new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error: Telephone already registered.", "Validation Error"));
     }
-
   }
-
 }

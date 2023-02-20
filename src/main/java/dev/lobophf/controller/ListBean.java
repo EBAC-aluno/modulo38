@@ -14,6 +14,7 @@ import dev.lobophf.domain.User;
 @ViewScoped
 public class ListBean implements Serializable {
   private static final long serialVersionUID = 1L;
+
   private UserDAO dao;
   private User user;
   private List<User> users;
