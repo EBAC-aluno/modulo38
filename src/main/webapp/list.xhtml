@@ -15,16 +15,20 @@
         <h:outputText value="#{p.name}"/>  
       </h:column>  
       <h:column>  
-        <f:facet name="header">Telephone number</f:facet>  
-        <h:outputText value="#{p.telephoneNumber}"/>  
+        <f:facet name="header">Telephone Number</f:facet>  
+        <h:outputText value="#{p.telephone}"/>  
       </h:column>  
       <h:column>  
         <f:facet name="header">Telephone Type</f:facet>  
         <h:outputText value="#{p.telephoneType.description}" />  
       </h:column>  
+        <h:column>
+            <f:facet name="header">Delete</f:facet>
+            <h:commandLink value="X" action="#{listBean.delete(p)}" />
+        </h:column>
     </h:dataTable>  
   </h:form>
-  <button style="margin-top: 30px;" onclick="location.href='/telephone/index.xhtml'" type="button">add telephone</button>
+  <button style="margin-top: 30px;" onclick="location.href='/user/index.xhtml'" type="button">add telephone</button>
  
 </h:body>
 
