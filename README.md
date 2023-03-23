@@ -25,4 +25,4 @@ I made some basic tests that can be run with the command below:
 ```bash
  ./gradlew war
 ```
-The artifact will be available on /build/libs/usar.war
+The artifact will be available on /build/libs/usar.war`
