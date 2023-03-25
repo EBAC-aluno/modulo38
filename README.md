@@ -1,3 +1,6 @@
+![](https://s2.gifyu.com/images/telefone.gif)
+
+
 To make this project work, you need to create a Postgres database with the following setup:
 
 ```
